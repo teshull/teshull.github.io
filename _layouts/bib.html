@@ -18,29 +18,29 @@
       {% for author in entry.author_array %}
         {% if forloop.length == 1 %}
           {% if author.last == site.scholar.last_name %}
-            <em>{{author.last}}, {{author.first}}</em>
+            <em>{{author.first}} {{author.last}}</em>
           {% else %}
-            {{author.last}}, {{author.first}}
+            {{author.first}} {{author.last}}
           {% endif %}
         {% else %}
           {% unless forloop.last %}
             {% if author.last == site.scholar.last_name %}
-              <em>{{author.last}}, {{author.first}}</em>,
+              <em>{{author.first}} {{author.last}}</em>,
             {% else %}
               {% if site.data.coauthors[author.last] %}
                 <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>, 
               {% else %}
-                {{author.last}}, {{author.first}},
+                {{author.first}} {{author.last}},
               {% endif %}
             {% endif %}
           {% else %}
             {% if author.last == site.scholar.last_name %}
-              and <em>{{author.last}}, {{author.first}}</em>
+              and <em>{{author.first}} {{author.last}}</em>
             {% else %}
               {% if site.data.coauthors[author.last] %}
                 and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a> 
               {% else %}
-                and {{author.last}}, {{author.first}}
+                and {{author.first}} {{author.last}}
               {% endif %}
             {% endif %}
           {% endunless %}
@@ -62,13 +62,20 @@
 
   <span class="links">
   {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
+    [<a class="abstract">Abstract</a>]
   {% endif %}
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
   {% endif %}
   {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+    [<a href="{{ entry.html }}" target="_blank">Link</a>]
+  {% endif %}
+  <!-- TODO make these assets of the page and don't link to iacoma website -->
+  {% if entry.preprint %}
+    [<a href="{{ entry.preprint }}" target="_blank">Preprint</a>]
+  {% endif %}
+  {% if entry.slides %}
+    [<a href="{{ entry.slides }}" target="_blank">Slides</a>]
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
@@ -79,7 +86,7 @@
   {% if entry.poster %}
     [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
   {% endif %}
-  {% if entry.slides %}
+  {% if entry.slidesold %}
     [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
   {% endif %}
   {% if entry.code %}

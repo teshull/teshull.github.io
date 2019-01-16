@@ -1,23 +1,35 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: <strong>Tom Shull</strong>
+description: Senior Researcher at Oracle Labs
 
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address: 
+    <p align="right">Prime Tower</p>
+    <p align="right">Hardstrasse 201</p>
+    <p align="right">8005 Zurich CH</p>
 
 news: true
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Senior Researcher with Oracle Labs.  Currently, I'm working on GraalVM's
+native image runtime and also strengthening GraalVM's Arm support.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I did my PhD with the
+[I-ACOMA](http://iacoma.cs.uiuc.edu/){:target="\_blank"} research group and focused
+on novel hardware-software co-designs. 
+During my PhD, I studied many VM implementations, including V8,
+JavaScriptCore, HotSpot, Maxine, and Swift, and designed hardware &
+software features to improve their execution. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My thesis, _Enhancing Non-Volatile Memory_, focused on adding support for
+non-volatile memory to Java runtimes and also adding simple hardware support to
+reduce the overhead of creating crash-consistent images.
+
+In the past I also spent time at Arm, working with both their NVM research 
+and OpenJDK teams.
+
