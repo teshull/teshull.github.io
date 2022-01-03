@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Tom Shull
-titel: Tom Shull
+title: Tom Shull
 email: mail@tomshull.com
 description: > # this means to ignore newlines until "url:"
   Personal Website for Tom Shull
