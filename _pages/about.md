@@ -16,11 +16,11 @@ news: true
 social: true
 ---
 
-I'm a Senior Researcher with Oracle Labs.  Currently, I'm working on GraalVM's
+I'm a Senior Researcher with [Oracle Labs](https://labs.oracle.com/pls/apex/f?p=94065:11:4725078482703:3835){:target="\_blank"}.  Currently, I'm working on GraalVM's
 native image runtime and also strengthening GraalVM's Arm support.
 
 I did my PhD with the
-[I-ACOMA](http://iacoma.cs.uiuc.edu/){:target="\_blank"} research group and focused
+[I-ACOMA](https://iacoma.cs.uiuc.edu/){:target="\_blank"} research group and focused
 on novel hardware-software co-designs. 
 During my PhD, I studied many VM implementations, including V8,
 JavaScriptCore, HotSpot, Maxine, and Swift, and designed hardware &
