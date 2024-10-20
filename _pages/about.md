@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Tom Shull</strong>
-description: Senior Researcher at Oracle Labs
+description: Principal Researcher at Oracle Labs
 
 profile:
   align: right
@@ -16,8 +16,8 @@ news: true
 social: true
 ---
 
-I'm a Senior Researcher with [Oracle Labs](https://labs.oracle.com/pls/apex/f?p=94065:11:4725078482703:3835){:target="\_blank"}.  Currently, I'm working on GraalVM's
-native image runtime and also strengthening GraalVM's Arm support.
+I'm a Principal Researcher at [Oracle Labs](https://labs.oracle.com/pls/apex/f?p=94065:11:4725078482703:3835){:target="\_blank"}.  Currently, I'm a core
+developer on the [GraalVM](https://www.graalvm.org/) Native Image team. I also help maintain GraalVM's Arm (AArch64) backend.
 
 I did my PhD with the
 [I-ACOMA](https://iacoma.cs.uiuc.edu/){:target="\_blank"} research group and focused
