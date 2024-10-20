@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blog/">
+  <link rel="canonical" href="/TOM_README/">
 </head>
 
 
@@ -86,32 +86,40 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="header-bar">
-  <h1>Personal Blog</h1>
-  <h2>Professional and Personal Musings</h2>
-</div>
+        <div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+    <h5 class="post-description"></h5>
+  </header>
 
-<ul class="post-list">
+  <article class="post-content  clearfix">
+    <p>I am using rvm to manage different ruby versions.</p>
+
+<p>Currently I am using ruby 2.7.2</p>
+
+<p>To set this, use the command: “rvm use ruby-2.7.2”</p>
+
+<p>Note for this to work you may have to follow the “/bin/bash –login” prompt</p>
+
+<p>on mac you can do the following</p>
+
+<p>export PATH=”/opt/homebrew/opt/ruby@2.7/bin:$PATH”</p>
+
+<p>If you need to have ruby@2.7 first in your PATH, run:
+  echo ‘export PATH=”/opt/homebrew/opt/ruby@2.7/bin:$PATH”’ » ~/.zshrc</p>
+
+<p>For compilers to find ruby@2.7 you may need to set:
+  export LDFLAGS=”-L/opt/homebrew/opt/ruby@2.7/lib”
+  export CPPFLAGS=”-I/opt/homebrew/opt/ruby@2.7/include”</p>
+
+  </article>
+
   
-</ul>
 
+  
 
-<div class="pagination clearfix mb1 mt4">
-  <div class="left">
-    
-      <span class="pagination-item disabled">Newer</span>
-    
-  </div>
-  <div class="right">
-    
-      <span class="pagination-item disabled">Older</span>
-    
-  </div>
-  <div class="pagination-meta">Page  of </div>
 </div>
-
-
 
       </div>
     </div>
